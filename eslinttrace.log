@@ -1,0 +1,160 @@
+[Trace - 9:49:34 PM] Sending request 'textDocument/codeAction - (38)'.
+Params: {
+    "textDocument": {
+        "uri": "file:///c%3A/Users/douglas.midgley/workspace/214771-Checking-for-quick-fixes/index.js"
+    },
+    "range": {
+        "start": {
+            "line": 22,
+            "character": 9
+        },
+        "end": {
+            "line": 22,
+            "character": 21
+        }
+    },
+    "context": {
+        "diagnostics": [
+            {
+                "range": {
+                    "start": {
+                        "line": 22,
+                        "character": 9
+                    },
+                    "end": {
+                        "line": 22,
+                        "character": 21
+                    }
+                },
+                "message": "Redundant Boolean call.",
+                "code": "no-extra-boolean-cast",
+                "codeDescription": {
+                    "href": "https://eslint.org/docs/latest/rules/no-extra-boolean-cast"
+                },
+                "severity": 1,
+                "source": "eslint"
+            }
+        ],
+        "only": [
+            "quickfix"
+        ],
+        "triggerKind": 1
+    }
+}
+
+
+[Trace - 9:49:34 PM] Received response 'textDocument/codeAction - (38)' in 1ms.
+Result: [
+    {
+        "title": "Fix this no-extra-boolean-cast problem",
+        "command": {
+            "title": "Fix this no-extra-boolean-cast problem",
+            "command": "eslint.applySingleFix",
+            "arguments": [
+                {
+                    "uri": "file:///c%3A/Users/douglas.midgley/workspace/214771-Checking-for-quick-fixes/index.js",
+                    "version": 111,
+                    "ruleId": "no-extra-boolean-cast"
+                }
+            ]
+        },
+        "kind": "quickfix",
+        "diagnostics": [
+            {
+                "message": "Redundant Boolean call.",
+                "severity": 1,
+                "source": "eslint",
+                "range": {
+                    "start": {
+                        "line": 22,
+                        "character": 9
+                    },
+                    "end": {
+                        "line": 22,
+                        "character": 21
+                    }
+                },
+                "code": "no-extra-boolean-cast",
+                "codeDescription": {
+                    "href": "https://eslint.org/docs/latest/rules/no-extra-boolean-cast"
+                }
+            }
+        ],
+        "isPreferred": true
+    },
+    {
+        "title": "Disable no-extra-boolean-cast for this line",
+        "command": {
+            "title": "Disable no-extra-boolean-cast for this line",
+            "command": "eslint.applyDisableLine",
+            "arguments": [
+                {
+                    "uri": "file:///c%3A/Users/douglas.midgley/workspace/214771-Checking-for-quick-fixes/index.js",
+                    "version": 111,
+                    "ruleId": "no-extra-boolean-cast"
+                }
+            ]
+        },
+        "kind": "quickfix"
+    },
+    {
+        "title": "Fix all no-extra-boolean-cast problems",
+        "command": {
+            "title": "Fix all no-extra-boolean-cast problems",
+            "command": "eslint.applySameFixes",
+            "arguments": [
+                {
+                    "uri": "file:///c%3A/Users/douglas.midgley/workspace/214771-Checking-for-quick-fixes/index.js",
+                    "version": 111
+                }
+            ]
+        },
+        "kind": "quickfix"
+    },
+    {
+        "title": "Disable no-extra-boolean-cast for the entire file",
+        "command": {
+            "title": "Disable no-extra-boolean-cast for the entire file",
+            "command": "eslint.applyDisableFile",
+            "arguments": [
+                {
+                    "uri": "file:///c%3A/Users/douglas.midgley/workspace/214771-Checking-for-quick-fixes/index.js",
+                    "version": 111,
+                    "ruleId": "no-extra-boolean-cast"
+                }
+            ]
+        },
+        "kind": "quickfix"
+    },
+    {
+        "title": "Show documentation for no-extra-boolean-cast",
+        "command": {
+            "title": "Show documentation for no-extra-boolean-cast",
+            "command": "eslint.openRuleDoc",
+            "arguments": [
+                {
+                    "uri": "file:///c%3A/Users/douglas.midgley/workspace/214771-Checking-for-quick-fixes/index.js",
+                    "version": 111,
+                    "ruleId": "no-extra-boolean-cast"
+                }
+            ]
+        },
+        "kind": "quickfix"
+    },
+    {
+        "title": "Fix all auto-fixable problems",
+        "command": {
+            "title": "Fix all auto-fixable problems",
+            "command": "eslint.applyAllFixes",
+            "arguments": [
+                {
+                    "uri": "file:///c%3A/Users/douglas.midgley/workspace/214771-Checking-for-quick-fixes/index.js",
+                    "version": 111
+                }
+            ]
+        },
+        "kind": "quickfix"
+    }
+]
+
+

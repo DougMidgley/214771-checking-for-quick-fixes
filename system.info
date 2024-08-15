@@ -1,0 +1,11 @@
+VSCODE
+
+Version: 1.92.1 (system setup)
+Commit: eaa41d57266683296de7d118f574d0c2652e1fc4
+Date: 2024-08-07T20:16:39.455Z
+Electron: 30.1.2
+ElectronBuildId: 9870757
+Chromium: 124.0.6367.243
+Node.js: 20.14.0
+V8: 12.4.254.20-electron.0
+OS: Windows_NT x64 10.0.22621
